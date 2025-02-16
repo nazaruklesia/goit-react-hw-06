@@ -2,7 +2,9 @@ import { Field, Form, Formik } from "formik";
 import { ErrorMessage } from "formik";
 import s from "./ContactForm.module.css";
 
+
 const ContactForm = ({ handleSubmit, fieldValidation }) => {
+
   return (
     <Formik initialValues={{ name: "", number: "" }} validationSchema={fieldValidation} onSubmit={handleSubmit}>
       <Form>
